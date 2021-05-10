@@ -1,0 +1,183 @@
+/*fonts*/
+@font-face {
+    font-family: 'YuTimes';
+    src: url('fonts/YuTimes.woff2') format('woff2'),
+        url('fonts/YuTimes.woff') format('woff');
+        url('fonts/YuTimes.ttf') format('ttf');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'TimesSerbian';
+    src: url('fonts/TimesSerbian.woff2') format('woff2'),
+        url('fonts/TimesSerbian.woff') format('woff');
+        url('fonts/TimesSerbian.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YUBlippoK';
+    src: url('fonts/YUBlippoK.woff2') format('woff2'),
+        url('fonts/YUBlippoK.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YUITCAvantGGO';
+    src: url('fonts/YUITCAvantGGO.woff2') format('woff2'),
+        url('fonts/YUITCAvantGGO.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YUSwissECompR';
+    src: url('fonts/YUSwissECompR.woff2') format('woff2'),
+        url('fonts/YUSwissECompR.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YUSwissK';
+    src: url('fonts/YUSwissK.woff2') format('woff2'),
+        url('fonts/YUSwissK.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YUHandelGotR';
+    src: url('fonts/YUHandelGotR.woff2') format('woff2'),
+        url('fonts/YUHandelGotR.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YUExoticD';
+    src: url('fonts/YUExoticD.woff2') format('woff2'),
+        url('fonts/YUExoticD.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YUSlateM';
+    src: url('fonts/YUSlateM.woff2') format('woff2'),
+        url('fonts/YUSlateM.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YUFuturaO';
+    src: url('fonts/YUFuturaO.woff2') format('woff2'),
+        url('fonts/YUFuturaO.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+.srpski-tajms {
+  font-family: "TimesSerbian", arial;
+  font-weight: normal;
+}
+
+.default {
+
+}
+
+.yutimes {
+  font-family: "YuTimes", arial;
+  font-weight: normal;
+}
+
+.yufutura {
+  font-family: "YUFuturaO", times;
+  font-weight: normal;
+}
+
+.yuslate {
+  font-family: "YUSlateM", times;
+  font-weight: normal;
+
+}
+
+.yuexotic {
+  font-family: "YUExoticD", times;
+  font-weight: normal;
+
+}
+
+
+/*Layout*/
+
+
+body {
+  /*background-color: beige;*/
+  padding: 30px;
+  font-size: 8vw;
+}
+
+.font-block {
+    margin-bottom: 100px;
+}
+
+.speak {
+  width: 4%;
+  margin-right: 20px;
+}
+
+.speak:hover{
+  cursor: pointer;
+}
+
+/*Details*/
+
+.label {
+  background-color: #AC80FF;
+  border: 3px solid black;
+  /*color: white;*/
+  font-size: 3vw;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+
+.description {
+  background-color: #282923;
+  font-family: monospace;
+  font-weight: normal;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 2vw;
+}
+
+.font-blurb {
+  margin: 20px 0 40px 0;
+}
+
+.wrong {
+  text-decoration: underline dotted red;
+}
+
+.swapper {
+  text-decoration: underline dotted blue;
+  cursor: pointer;
+}
