@@ -357,6 +357,12 @@ a {
 }
 
 
+.verdana-quote {
+  font-family: "Verdana";
+  font-style: italic;
+  font-size: 5vw;
+}
+
 @media (max-width: 500px) {
  .section p {
   max-width: 100%;
