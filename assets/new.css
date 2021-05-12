@@ -1,0 +1,380 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*Fonts*/
+@font-face {
+    font-family: 'Dijakritika';
+    src: url('fonts/Dijakritika-Regular.woff2') format('woff2'),
+        url('fonts/Dijakritika-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dijakritika-Bold';
+    src: url('fonts/Dijakritika-Bold.woff2') format('woff2'),
+        url('fonts/Dijakritika-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dijakritika-Italic';
+    src: url('fonts/Dijakritika-Italic.woff2') format('woff2'),
+        url('fonts/Dijakritika-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Influ-BG';
+    src: url('fonts/InfluBG-Bold.woff2') format('woff2'),
+        url('fonts/InfluBG-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TimesSerbian';
+    src: url('fonts/TimesSerbian.woff2') format('woff2'),
+        url('fonts/TimesSerbian.woff') format('woff');
+        url('fonts/TimesSerbian.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Resavska-Bold';
+    src: url('fonts/ResavskaBGSans-Bold.woff2') format('woff2'),
+        url('fonts/ResavskaBGSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Resavska';
+    src: url('fonts/ResavskaBGSans.woff2') format('woff2'),
+        url('fonts/ResavskaBGSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'YuTimes';
+    src: url('fonts/YuTimes.woff2') format('woff2'),
+        url('fonts/YuTimes.woff') format('woff');
+        url('fonts/YuTimes.ttf') format('ttf');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arial Cirilica';
+    src: url('fonts/ArialCirilicaBold.woff2') format('woff2'),
+        url('fonts/ArialCirilicaBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'YU-Futura';
+    src: url('fonts/YUFuturaO.woff2') format('woff2'),
+        url('fonts/YUFuturaO.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cyrillic Times';
+    src: url('fonts/CyrillicTimes.woff2') format('woff2'),
+        url('fonts/CyrillicTimes.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'C_Blippo';
+    src: url('fonts/CBlippoItalic.woff2') format('woff2'),
+        url('fonts/CBlippoItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+
+
+/*Layout*/
+
+
+body {
+  background-color: #E0F8FF;
+  font-family: 'Dijakritika';
+  margin: 0;
+  /*background-image: url("imgs/marble-bg.gif");*/
+}
+
+
+.intro {
+  height: 100vh;
+  width: 100vw;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.title {
+  color: white;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 6vw;
+  padding: 0;
+  margin:0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-weight: 100;
+  font-size: 40px;
+  margin: 0 0 20px 0;
+}
+
+h3{
+      letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.section {
+  padding: 50px;
+}
+
+.section p {
+  font-size: 25px;
+  width: 600px;
+  line-height: 1.3;
+  margin: 10px 0 30px 0;
+}
+
+.controls {
+  font-family: "Resavska", arial;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.controls input[type="radio"] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.controls label {
+    display: inline-block;
+    padding: 7px 16px 2px 16px;
+    border: 2px solid #444;
+    border-radius: 6px;
+}
+
+.controls input[type="radio"]:checked + label {
+    background-color:#00A5FF;
+    border-color: #000000;
+}
+
+.controls input[type="radio"]:focus + label {
+    border: 2px solid;
+}
+
+.controls label:hover {
+  background-color: #ACEAFF;
+  cursor: pointer;
+}
+
+.alphabet {
+  margin-top: 40px;
+}
+
+#cirilica, #russian {
+  font-size: 6vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.latinica {
+  font-size: 2vw;
+}
+
+.item {
+  margin: 0 45px 45px 0;
+  padding: 5px;
+}
+
+.special {
+  border: 2px dotted blue;
+}
+
+.yuscii-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 6vw;
+}
+
+.you-type {
+  background-color: #282923;
+  font-family: monospace;
+  font-weight: normal;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 2vw;
+}
+
+.thumb {
+  max-width: 500px;
+}
+
+img {
+  width: 100%;
+  border: 2px solid black;
+}
+
+.example {
+  margin-bottom: 50px;
+}
+
+.text {
+  background-image: url("imgs/marble-bg.gif");
+  font-family: "times new roman", serif;
+  width: 100%;
+  padding: 50px;
+  border: 2px solid black;
+  font-size: 36px;
+}
+
+.mistake {
+  color: blue;
+}
+
+.caption {
+  font-family: "Resavska", sans;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.osisana {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+
+.bullets {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 7px;
+  padding: 20px;
+  border: 2px solid black;
+  width: 200px;
+  /* height: 210px; */
+  margin: 0 20px 20px 0;
+}
+}
+
+.bullet-item {
+  /*padding: 0 20px 0 0;*/
+}
+
+.year {
+  font-family: "Resavska-Bold", sans;
+}
+
+.bullet-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bullet-img {
+  margin-bottom: 20px;
+}
+
+.yutimes {
+  font-family: "YuTimes", times;
+  font-size: 5vw;
+}
+
+.credit {
+  background-color: white;
+  font-family: "Resavska-Bold", sans;
+  font-size: 15px;
+  border-radius: 7px;
+  padding: 10px;
+  border: 2px solid black;
+  line-height: 1.4;
+}
+
+.cred-wrapper {
+  max-width: 500px;
+}
+
+.yuarial {
+  font-family: "Arial Cirilica", sans;
+  font-size: 5vw;
+}
+
+.yufutura {
+  font-family: "YU-Futura", sans;
+  font-size: 5vw;
+}
+
+.yutimescyrillic {
+  font-family: 'Cyrillic Times', times;
+  font-size: 6vw;
+}
+
+.blippo {
+  font-family: "C_Blippo", sans;
+  font-size: 5vw;
+}
+
+a {
+  color: black;
+}
+
+
+@media (max-width: 500px) {
+ .section p {
+  max-width: 100%;
+ }
+
+ .bullets {
+  width: 100%;
+ }
+
+ .yutimes, .yutimescyrillic, .yuarial, .yufutura, .blippo {
+  font-size: 50px;
+ }
+
+ .latinica {
+    font-size: 4vw;
+}
+
+.cred-wrapper{
+  margin-top: 20px;
+}
+}

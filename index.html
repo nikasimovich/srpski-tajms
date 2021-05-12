@@ -1,50 +1,760 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Srpski Tajms</title>
-  <link rel="stylesheet" href="assets/main.css">
-  <meta charset="utf-8">
-  <!-- <YU YUSCII> -->
-</head>
-<body>
-  <div class="font-block">
-    <span class="label">Times New Roman, 1990</span>
-    <div class="font-blurb default"><img class="speak" src="assets/imgs/play.gif"><span class="wrong">C</span>ao! Dobrodo<span class="wrong">s</span>li na moju stranicu gde mo<span class="wrong">z</span>ete saznati malo vi<span class="wrong">s</span>e o meni.<br/></div>
-    <div class="description">Cao! Dobrodosli na moju stranicu gde mozete saznati malo vise o meni.</div>
-  </div>
-
-
-  <div class="font-block">
-    <span class="label">YuTimes, 1992</span>
-    <div class="font-blurb yutimes"><span class="swapper">]</span>ao! Dobrodo<span class="swapper">{</span>li na moju stranicu gde mo`ete saznati malo vi{e o meni.<br/>
-    <!-- Добродошли на моју страницу --></div>
-    <div class="description">]ao! Dobrodo{li na moju stranicu gde mo`ete saznati malo vi{e o meni.</div>
-  </div>
-
-  <div class="font-block">
-    <span class="label">Srpski Tajms, 1995</span>
-    <div class="font-blurb srpski-tajms">Ćao, Dobrodošli na moju stranicu na kojoj možete saznati malo više o meni.</div>
-    <div class="description">Ćao, Dobrodošli na moju veb stranicu na kojoj možete saznati malo više o meni.</div>
-  </div>
-
-  <div class="font-block">
-    <span class="label">Srpski Tajms, 1995</span>
-    <div class="font-blurb srpski-tajms">
-    Ћао! Добродошли на моју страницу на којој можете сазнати мало више о мени.</div>
-    <div class="description">Ћао! Добродошли на моју страницу на којој можете сазнати мало више о мени.</div>
-  </div>
-
-
-
-    <p class="yutimes">halo ćao, šta ima novo? добро дошли на мој сајт</p>
-  <p class="srpski-tajms">halo ćao, šta ima novo? добро дошли на мој сајт</p>
-  <p class="default">halo ćao, šta ima novo? добро дошли на мој сајт</p>
-  <p class="default">hello }hello, what&rsquo;s new? Welcome to my website.</p>
-  <p class="yufutura">halo }ćao, š{ta ima novo? добро дошли на мој сајт</p>
-  <p class="yuslate">halo }ćao, š{ta ima novo? добро дошли на мој }сајт</p>
-  <p class="yuexotic">halo }ćao, š{ta ima novo? добро дошли на мој }сајт</p>
-
-
-  <script src="assets/main.js"></script>
-</body>
+   <head>
+      <title>Forgotten Letters</title>
+      <link rel="stylesheet" href="assets/new.css">
+      <meta charset="utf-8">
+      <link rel="icon" type="image/png" href="assets/imgs/favicon.png">
+   </head>
+   <body>
+      <div class="intro">
+         <h1 class="title">Заборављена Cлова</h1>       <h3>Forgotten Letters</h3>
+      </div>
+      <div class="section">
+         <p>
+            Technology governs how we communicate. Many of the defaults we&rsquo;re familiar with are rooted in English because of the internet&rsquo;s early origins. Communicating in English became standard, and keyboards and language support echoed this merit. In the former Yugoslavia where both a Serbian Cyrillic script and a Latin alphabet are used simultaneously, this mirrored cultural changes happening during the dissolution of the country in the 1990s.
+         </p>
+         <p>
+            &ldquo;Cyrillic is our cultural good&rdquo; says Olivera Stojadinović, a type designer and professor at The University of the Arts in Belgrade who is committed to preserving the alphabet&rsquo;s usage online. This project is a study on the Serbian Cyrillic alphabet and its digital history.
+         </p>
+      </div>
+      <div class="section cyrillic-wrapper">
+         <h2>The Serbian Alphabet</h2>
+         <p>Serbia has two official alphabets: the ćirilica, or Serbian Cyrillic, and the Serbian Latin script. While similar to Russian, there are seven distinct characters that highlight the phonetic quality of the language. When Cyrillic support is offered, typically the focus is on the Russian alphabet.</p>
+         <div class="controls">
+            <form name="myForm" id="form">
+               <input type="radio" id="radioCirilica" name="jezik" value="cirilica" checked>
+               <label for="radioCirilica">Serbian Cyrillic</label>
+               <input type="radio" id="radioRuski" name="jezik" value="russian">
+               <label for="radioRuski">Russian</label>
+            </form>
+         </div>
+         <div class="alphabet">
+            <div id="russian" style="display: none;">
+               <div class="item">
+                  Аа
+               </div>
+               <div class="item">Бб</div>
+               <div class="item">Вв</div>
+               <div class="item">Гг</div>
+               <div class="item">Дд</div>
+               <div class="item">Ее</div>
+               <div class="item">Ёё</div>
+               <div class="item">Жж</div>
+               <div class="item">Зз</div>
+               <div class="item">Ии</div>
+               <div class="item">Йй</div>
+               <div class="item">Кк</div>
+               <div class="item">Лл</div>
+               <div class="item">Мм</div>
+               <div class="item">Нн</div>
+               <div class="item">Оо</div>
+               <div class="item">Пп</div>
+               <div class="item">Рр</div>
+               <div class="item">Сс</div>
+               <div class="item">Тт</div>
+               <div class="item">Уу</div>
+               <div class="item">Фф</div>
+               <div class="item">Хх</div>
+               <div class="item">Цц</div>
+               <div class="item">Чч</div>
+               <div class="item">Шш</div>
+               <div class="item">Щщ</div>
+               <div class="item">Ъъ</div>
+               <div class="item">Ы</div>
+               <div class="item">ы</div>
+               <div class="item">Ьь </div>
+               <div class="item">Ээ</div>
+               <div class="item">Юю</div>
+               <div class="item">Яя</div>
+            </div>
+            <div id="cirilica">
+               <div class="item">
+                  Аа
+                  <div class="latinica">Аа</div>
+               </div>
+               <div class="item">
+                  Бб
+                  <div class="latinica">Bb</div>
+               </div>
+               <div class="item">
+                  Вв
+                  <div class="latinica">Vv</div>
+               </div>
+               <div class="item">
+                  Гг
+                  <div class="latinica">Gg</div>
+               </div>
+               <div class="item">
+                  Дд
+                  <div class="latinica">Dd</div>
+               </div>
+               <div class="item special">
+                  Ђђ
+                  <div class="latinica">Đđ</div>
+               </div>
+               <div class="item special">
+                  Ее
+                  <div class="latinica">Ее</div>
+               </div>
+               <div class="item">
+                  Жж
+                  <div class="latinica">Žž</div>
+               </div>
+               <div class="item">
+                  Зз
+                  <div class="latinica">Zz</div>
+               </div>
+               <div class="item">
+                  Ии
+                  <div class="latinica">Ii</div>
+               </div>
+               <div class="item special">
+                  Јј
+                  <div class="latinica">Jj</div>
+               </div>
+               <div class="item">
+                  Кк
+                  <div class="latinica">Kk</div>
+               </div>
+               <div class="item">
+                  Лл
+                  <div class="latinica">Ll</div>
+               </div>
+               <div class="item special">
+                  Љљ
+                  <div class="latinica">Lj lj</div>
+               </div>
+               <div class="item">
+                  Мм
+                  <div class="latinica">Mm</div>
+               </div>
+               <div class="item">
+                  Нн
+                  <div class="latinica">Nn</div>
+               </div>
+               <div class="item special">
+                  Њњ
+                  <div class="latinica">Nj nj</div>
+               </div>
+               <div class="item">
+                  Оо
+                  <div class="latinica">Oo</div>
+               </div>
+               <div class="item">
+                  Пп
+                  <div class="latinica">Pp</div>
+               </div>
+               <div class="item">
+                  Рр
+                  <div class="latinica">Rr</div>
+               </div>
+               <div class="item">
+                  Сс
+                  <div class="latinica">Ss</div>
+               </div>
+               <div class="item">
+                  Тт
+                  <div class="latinica">Tt</div>
+               </div>
+               <div class="item special">
+                  Ћћ
+                  <div class="latinica">Ćć</div>
+               </div>
+               <div class="item">
+                  Уу 
+                  <div class="latinica">Uu</div>
+               </div>
+               <div class="item">
+                  Фф
+                  <div class="latinica">Ff</div>
+               </div>
+               <div class="item">
+                  Хх
+                  <div class="latinica">Hh</div>
+               </div>
+               <div class="item">
+                  Цц
+                  <div class="latinica">Cc</div>
+               </div>
+               <div class="item">
+                  Чч
+                  <div class="latinica">Čč</div>
+               </div>
+               <div class="item special">
+                  Џџ
+                  <div class="latinica">Dž dž</div>
+               </div>
+               <div class="item">
+                  Шш
+                  <div class="latinica">Š š</div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="section">
+         <h2>YUSCII</h2>
+         <p>YUSCII was the Yugoslavian character adaption of ASCII (American Standard Code for Information Interchange). Essentially, it was a hacked solution that replaced less common characters with Yugoslavian ones. This was the only way of typing with a Serbian Cyrillic typeface until 1997.</p>
+         <!-- <div class="controls">
+            <form name="myForm" id="form">
+               <input type="radio" id="radioCirilica" name="tastatura" value="cirilica" checked>
+               <label for="radioCirilica">Serbian Cyrillic</label>
+               <input type="radio" id="radioRuski" name="tastatura" value="latinica">
+               <label for="radioLatin">Latin</label>
+            </form>
+         </div> -->
+         <div class="yuscii-wrapper">
+            <div class="item">
+               ж
+               <div class="you-type">
+                  `
+               </div>
+            </div>
+            <div class="item">
+               а
+               <div class="you-type">
+                  a
+               </div>
+            </div>
+            <div class="item">
+               б
+               <div class="you-type">
+                  b
+               </div>
+            </div>
+            <div class="item">
+               ц
+               <div class="you-type">
+                  c
+               </div>
+            </div>
+            <div class="item">
+               д
+               <div class="you-type">
+                  d
+               </div>
+            </div>
+            <div class="item">
+               е
+               <div class="you-type">
+                  e
+               </div>
+            </div>
+            <div class="item">
+               ф
+               <div class="you-type">
+                  f
+               </div>
+            </div>
+            <div class="item">
+               г
+               <div class="you-type">
+                  g
+               </div>
+            </div>
+            <div class="item">
+               х
+               <div class="you-type">
+                  h
+               </div>
+            </div>
+            <div class="item">
+               и
+               <div class="you-type">
+                  i
+               </div>
+            </div>
+            <div class="item">
+               ј
+               <div class="you-type">
+                  j
+               </div>
+            </div>
+            <div class="item">
+               к
+               <div class="you-type">
+                  k
+               </div>
+            </div>
+            <div class="item">
+               л
+               <div class="you-type">
+                  l
+               </div>
+            </div>
+            <div class="item">
+               м
+               <div class="you-type">
+                  m
+               </div>
+            </div>
+            <div class="item">
+               н
+               <div class="you-type">
+                  n
+               </div>
+            </div>
+            <div class="item">
+               о
+               <div class="you-type">
+                  o
+               </div>
+            </div>
+            <div class="item">
+               п
+               <div class="you-type">
+                  p
+               </div>
+            </div>
+            <div class="item">
+               љ
+               <div class="you-type">
+                  q
+               </div>
+            </div>
+            <div class="item">
+               р
+               <div class="you-type">
+                  r
+               </div>
+            </div>
+            <div class="item">
+               с
+               <div class="you-type">
+                  s
+               </div>
+            </div>
+            <div class="item">
+               т
+               <div class="you-type">
+                  t
+               </div>
+            </div>
+            <div class="item">
+               у
+               <div class="you-type">
+                  u
+               </div>
+            </div>
+            <div class="item">
+               в
+               <div class="you-type">
+                  v
+               </div>
+            </div>
+            <div class="item">
+               њ
+               <div class="you-type">
+                  w
+               </div>
+            </div>
+            <div class="item">
+               џ
+               <div class="you-type">
+                  x
+               </div>
+            </div>
+            <div class="item">
+               &nbsp;
+               <div class="you-type">
+                  y
+               </div>
+            </div>
+            <div class="item">
+               з
+               <div class="you-type">
+                  z
+               </div>
+            </div>
+            <div class="item">
+               ш
+               <div class="you-type">
+                  {
+               </div>
+            </div>
+            <div class="item">
+               ђ
+               <div class="you-type">
+                  |
+               </div>
+            </div>
+            <div class="item">
+               ћ
+               <div class="you-type">
+                  }
+               </div>
+            </div>
+            <div class="item">
+               ч
+               <div class="you-type">
+                  ~
+               </div>
+            </div>
+            <div class="item">
+               Ж
+               <div class="you-type">
+                  @
+               </div>
+            </div>
+            <div class="item">
+               А
+               <div class="you-type">
+                  A
+               </div>
+            </div>
+            <div class="item">
+               Б
+               <div class="you-type">
+                  B
+               </div>
+            </div>
+            <div class="item">
+               C
+               <div class="you-type">
+                  C
+               </div>
+            </div>
+            <div class="item">
+               Д
+               <div class="you-type">
+                  D
+               </div>
+            </div>
+            <div class="item">
+               Е
+               <div class="you-type">
+                  E
+               </div>
+            </div>
+            <div class="item">
+               Ф
+               <div class="you-type">
+                  F
+               </div>
+            </div>
+            <div class="item">
+               Г
+               <div class="you-type">
+                  G
+               </div>
+            </div>
+            <div class="item">
+               Х
+               <div class="you-type">
+                  H
+               </div>
+            </div>
+            <div class="item">
+               И
+               <div class="you-type">
+                  I
+               </div>
+            </div>
+            <div class="item">
+               Ј
+               <div class="you-type">
+                  J
+               </div>
+            </div>
+            <div class="item">
+               К
+               <div class="you-type">
+                  K
+               </div>
+            </div>
+            <div class="item">
+               Л
+               <div class="you-type">
+                  L
+               </div>
+            </div>
+            <div class="item">
+               М
+               <div class="you-type">
+                  M
+               </div>
+            </div>
+            <div class="item">
+               Н
+               <div class="you-type">
+                  N
+               </div>
+            </div>
+            <div class="item">
+               О
+               <div class="you-type">
+                  O
+               </div>
+            </div>
+            <div class="item">
+               П
+               <div class="you-type">
+                  P
+               </div>
+            </div>
+            <div class="item">
+               Љ
+               <div class="you-type">
+                  Q
+               </div>
+            </div>
+            <div class="item">
+               Р
+               <div class="you-type">
+                  R
+               </div>
+            </div>
+            <div class="item">
+               С
+               <div class="you-type">
+                  S
+               </div>
+            </div>
+            <div class="item">
+               Т
+               <div class="you-type">
+                  T
+               </div>
+            </div>
+            <div class="item">
+               У
+               <div class="you-type">
+                  U
+               </div>
+            </div>
+            <div class="item">
+               В
+               <div class="you-type">
+                  V
+               </div>
+            </div>
+            <div class="item">
+               Њ
+               <div class="you-type">
+                  W
+               </div>
+            </div>
+            <div class="item">
+               Џ
+               <div class="you-type">
+                  X
+               </div>
+            </div>
+            <div class="item">
+               &nbsp;
+               <div class="you-type">
+                  Y
+               </div>
+            </div>
+            <div class="item">
+               З
+               <div class="you-type">
+                  Z
+               </div>
+            </div>
+            <div class="item">
+               Ш
+               <div class="you-type">
+                  [
+               </div>
+            </div>
+            <div class="item">
+               Ђ
+               <div class="you-type">
+                  \
+               </div>
+            </div>
+            <div class="item">
+               Ћ
+               <div class="you-type">
+                  ]
+               </div>
+            </div>
+            <div class="item">
+               Ч
+               <div class="you-type">
+                  ^
+               </div>
+            </div>
+         </div>
+         <p>This was not an ideal solution because some of these characters were necessary, and if you didn&rsquo;t have local versions of the YUSCII fonts installed, your text would show the incorrect characters.</p>
+         <!--           <img class="thumb" src="assets/imgs/yuscii.png"> -->
+         <div class="example">
+            <div class="text">
+               Svakom slovu u tekstu odgovara broj, kod. Za englesk jezik je lako. Standard je ASCII raspored, ali tu nema na<span class="mistake">{</span>ih slova. Za na<span class="mistake">{</span> jezik ne postoji jedan standard, ve<span class="mistake">}</span> ima vi<span class="mistake">{</span>e varijanti kodnih rasporeda. Font koji koristite na svom ra<span class="mistake">~</span>unaru odgovara nekom od kodnih rasporeda. Da bi u WWW-u videli na<span class="mistake">{</span>a slova treba da izaberete odgovaraju}i kodni raspored.
+            </div>
+            <div class="caption">
+               The above is an excerpt from a 1995 website from the School of Electrical Engineering in Belgrade. It describes the issues with ASCII characters.
+            </div>
+         </div>
+         <p>
+            Because typing correctly required extra effort, many internet users opted to use the closest English letters in place of the Serbian ones, altering the pronounciation and meaning of words. This practice was called &ldquo;ošišana latinica,&rdquo; or trimmed latin text.
+         </p>
+         <div class="example">
+            <div class="osisana">
+               šišanje
+               <div class="caption">
+                  Haircutting/trimming
+               </div>
+            </div>
+            <div class="osisana">
+               sisanje
+               <div class="caption">
+                  Sucking
+               </div>
+            </div>
+         </div>
+         <p>
+            Sometimes swapping letters was close enough, but other times language could be misinterpreted.
+         <p>
+            The Serbian Latin text became quicker and more widespread than the Cyrillic script because of these challenges.
+            There were also very few custom Serbian typefaces, so people began crafting their own solutions to pre-existing fonts.
+         </p>
+         <!-- Display that shows YuTimes, YuArial, YuFutura with dates. Checkbox to change font.
+            1995 commission for Srpski Tajms with info from Olivera. Quote from Olivera about how she felt bad about it.
+            
+            at same time .yu domain, talk about this
+            
+            add in CSS and web font availability
+            
+            cirilica na poklonu with link to tipometar
+            
+            conclusion with a ltitel about me
+            
+            -->
+      </div>
+      <div class="section">
+         <h2>.yu to .СРБ</h2>
+         <div class="example">
+            <img src="assets/imgs/storefront.jpg">
+            <div class="caption">A storefront in Belgrade with the co.yu domain suffix painted over. (2015)</div>
+         </div>
+         <p>The history of the .yu domain parallels the dissolvement of Yugoslavia. </p>
+         <div class="bullet-wrapper">
+            <div class="bullets">
+               <div class="bullet-item">
+                  <img class="bullet-img" src="assets/imgs/borka.jpg">
+               </div>
+               <div class="bullet-item">
+                  <span class="year">1987</span><br/>
+                  The .yu domain was registered by Slovenian computer scientist, Borka Jerman Blažič. At the time, Yugoslavia was still a unified country, but ethnic tensions are rising.
+               </div>
+            </div>
+            <div class="bullets">
+               <div class="bullet-item">
+                  <img class="bullet-img" src="assets/imgs/slovenia.jpg">
+               </div>
+               <div class="bullet-item">
+                  <span class="year">1991</span><br/>
+                  Slovenia was the main hub for connection, but to establish an international connection they needed permission from Belgrade in Serbia. In April 1991, Jerman Blažič goes to Belgrade to request permission and receives access, but on June 25 the same year, Slovenia and Croatia declare independence.
+               </div>
+            </div>
+            <div class="bullets">
+               <div class="bullet-item">
+                  <img class="bullet-img" src="assets/imgs/tasic.png">
+               </div>
+               <div class="bullet-item">
+                  <span class="year">1994 – 1995</span><br/>
+                  .yu domain hosted in Slovenia, which is no longer part of Yugoslavia. Mirjana Tasić, a Serbian computer scientist, requests access to .yu domain and receives it. Serbia formally enters internet when sanctions are lifted in 1995.
+               </div>
+            </div>
+            <div class="bullets">
+               <div class="bullet-item">
+                  <img class="bullet-img" src="assets/imgs/otpor.jpg">
+               </div>
+               <div class="bullet-item">
+                  <span class="year">1998 – 2004</span><br/>
+                  Within Yugoslavia, a student group, Otpor, started uprisings against Slobodan Milošević, whom they held responsible for the increased nationalism and murders of ethnic groups in Serbian territories. The Otpor logo was proudly printed in the Serbian Cyrillic alphabet.
+               </div>
+            </div>
+            <div class="bullets">
+               <div class="bullet-item">
+                  <span class="year">2003 – 2006</span><br/>
+                  The Federal Republic of Yugoslavia dissolves into the State Union of Serbia and Montenegro, and then in 2006, two separate countries: Serbia and Montenegro. This results in two additional domain names: .rs and .me
+               </div>
+            </div>
+            <div class="bullets">
+               <div class="bullet-item">
+                  <span class="year">2010</span><br/>
+                  The .yu domain expires.
+               </div>
+            </div>
+            <div class="bullets">
+               <div class="bullet-item">
+                  <span class="year">2012</span><br/>
+                  The .СРБ domain is introduced. Serbia is the second country to have a Cyrillic web domain.
+               </div>
+            </div>
+         </div>
+         <p>
+           Throughout these structural changes, the Cyrillic Alphabet continued to be used in Serbia but not in other regions of Yugoslavia.
+         </p>
+         <p>
+           Aleksandra Domanovic&rsquo;s 2013 movie, <a href="https://vimeo.com/95833310">From .yu to .me</a>, elaborates on the transition of domain names.
+         </p>
+      </div>
+      <div class="section">
+         <h2>YuFonts</h2>
+         <p>Even with YUSCII type, there weren&rsquo;t very many typefaces that supported Serbian characters in either the Latin or Cyrillic script. To remedy this, early computer users customized existing websafe typefaces and shared them with one another. Many of them were renamed with the prefix &ldquo;Yu.&rdquo; You could only use these typefaces if you had them stored locally.</p>
+         <div class="example">
+            <div class="yutimes">
+               ]ao! Dobrodo{li na moju stranicu gde mo`ete saznati malo vi{e o meni.
+               <div class="cred-wrapper">
+                  <div class="credit">
+                  YuTimes. MiMac, Belgrade, Yugoslavia (1992)
+                  </div>
+               </div>
+            </div>
+          </div>
+            <div class="example">
+               <div class="yutimescyrillic">
+                  Ćao, Dobrodošli na moju veb stranicu na kojoj možete saznati malo više o meni.
+                  <div class="cred-wrapper">
+                     <div class="credit">
+                     Cyrillic Times. No credit listed (1992)
+                     </div>
+                  </div>
+               </div>
+            </div>
+         <div class="example">
+            <div class="yuarial">
+               ]ao! Dobrodo{li na moju stranicu gde mo`ete saznati malo vi{e o meni.
+               <div class="cred-wrapper">
+                  <div class="credit">
+                  Arial Ćirilice Bold. Ćirilica set by Dino (1993)
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="example">
+            <div class="yufutura">
+               ]ao! Dobrodo{li na moju stranicu gde mo`ete saznati malo vi{e o meni.
+               <div class="cred-wrapper">
+                  <div class="credit">
+                  YUFuturaO. Converted by ALLTYPE (1992)
+                  </div>
+               </div>
+            </div>
+         </div>
+          <div class="example">
+            <div class="blippo">
+               ]ao! Dobrodo{li na moju stranicu gde mo`ete saznati malo vi{e o meni. x
+               <div class="cred-wrapper">
+                  <div class="credit">
+                  Blippo Italic. Modified by Predrag Milivojevic01 (1992). Author left his name and phone number in certain characters.
+                  </div>
+               </div>
+            </div>
+         </div>
+         <p>Most of these typefaces were edits of Swiss inspired typefaces used predominantly in the West, and many were not drawn from scratch. Starting in 1997, you could use the Cyrillic alphabet of websafe fonts, and in 2009 online custom typography became supported across browsers with the introduction of CSS 3.</p>
+         </div>
+      </div>
+      <div class="section">
+         <h2>Ćirilice na Poklon</h2>
+         <p>In 1995, Stojadinović was commissioned to create an official set of &rdquo;Srpski Tajms,&ldquo; or Serbian Times, as there were many edits circulating the digital world. </p>
+         <p>&ldquo;I did it but I feel bad about it now,&rdquo; Stojadinović said in a Zoom meeting this April. &ldquo;It is better to have an original author&rsquo;s creation.&rdquo;
+          <p>Stojadinović has been making typefaces since the start of the digital revolution, and alongisde the City of Belgrade and the Ministry of Culture of Serbia, distributes open source typefaces optimized for the Serbian language. This project is called Ćirilice na Poklon, or Cyrillic as  Gift. She also partnered with The Registar of National Serbian Internet Domains (RNIDS) to create a custom typeface in celebration with the newly formed cyrillic domain.</p>
+          <p>This website is  typeset in Dijakritika and Resavska, two of Stojadinović&rsquo;s recent typefaces. Both typefaces are freely distributed from Stojadinović&rsquo;s website, <a href="http://www.tipometar.org/aktuelno/akcija!/Dijakritika/IndexLat.html">Tipometar.org.</a> </p>
+      <script src="assets/new.js"></script>
+   </body>
 </html>

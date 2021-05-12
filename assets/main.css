@@ -98,9 +98,6 @@
   font-weight: normal;
 }
 
-.default {
-
-}
 
 .yutimes {
   font-family: "YuTimes", arial;
@@ -180,4 +177,10 @@ body {
 .swapper {
   text-decoration: underline dotted blue;
   cursor: pointer;
+  transition: font-family 4s;
+}
+
+.default {
+  font-family: Times New Roman;
+  text-decoration: none;
 }
