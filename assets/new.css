@@ -313,6 +313,10 @@ img {
   margin-bottom: 20px;
 }
 
+.tajmsphoto {
+  max-width: 30%;
+}
+
 .yutimes {
   font-family: "YuTimes", times;
   font-size: 5vw;
